@@ -3,7 +3,7 @@
 <form action="{{ route('books.store') }}" method="POST" enctype="multipart/form-data">
     @csrf
 
-    <input type="text" name="tittle" placeholder="Title"><br>
+    <input type="text" name="title" placeholder="Title"><br>
     <input type="text" name="author" placeholder="Author"><br>
     <input type="text" name="genre" placeholder="Genre"><br>
     <input type="number" name="pages" placeholder="Pages"><br>
