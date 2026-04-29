@@ -26,7 +26,6 @@ Aplikasi web berbasis Laravel untuk mengelola daftar buku dengan fitur CRUD leng
 - 7. Mencatat tanggal mulai dan selesai membaca
 - 8. Memberikan rating buku (1–5 bintang)
 - 9. Validasi form input
-- 10. Notifikasi pesan sukses dan error
 
 ---
 
