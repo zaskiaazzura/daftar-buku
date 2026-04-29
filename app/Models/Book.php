@@ -17,4 +17,14 @@ class Book extends Model
         'finished_at',
         'rating'
     ];
+
+    public function getStatusLabelAttribute(): string
+    {
+        return match($this->status) {
+            'want_to_read' => 'Ingin Dibaca',
+            'reading'      => 'Sedang Dibaca',
+            'finished'     => 'Selesai',
+            default        => ucwords(str_replace('_', ' ', $this->status)),
+        };
+    }
 }

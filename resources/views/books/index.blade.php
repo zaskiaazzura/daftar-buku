@@ -30,7 +30,7 @@
                 Tidak ada
             @endif
         </td>
-        <td>{{ $b->status }}</td>
+        <td>{{ $b->status_label }}</td>
         <td>{{ $b->started_at }}</td>
         <td>{{ $b->finished_at }}</td>
         <td>{{ $b->rating }}</td>
