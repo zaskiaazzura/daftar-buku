@@ -22,7 +22,6 @@ class BookController extends Controller
     {
         $data = $request->all();
 
-        // upload cover
         if ($request->hasFile('cover')) {
             $file = $request->file('cover');
             $filename = time() . '.' . $file->getClientOriginalExtension();

@@ -21,10 +21,10 @@ class Book extends Model
     public function getStatusLabelAttribute(): string
     {
         return match($this->status) {
-            'want_to_read' => 'Ingin Dibaca',
-            'reading'      => 'Sedang Dibaca',
-            'finished'     => 'Selesai',
-            default        => ucwords(str_replace('_', ' ', $this->status)),
+            'want_to_read'      => 'Ingin Dibaca',
+            'currently_reading' => 'Sedang Dibaca',
+            'finished'          => 'Selesai',
+            default             => ucwords(str_replace('_', ' ', $this->status)),
         };
     }
 }

@@ -18,7 +18,7 @@
 
     @foreach($books as $b)
     <tr>
-        <td>{{ $b->tittle ?? $b->title }}</td>
+        <td>{{ $b->title ?? $b->title }}</td>
 
         <td>{{ $b->author }}</td>
         <td>{{ $b->genre }}</td>

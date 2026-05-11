@@ -8,7 +8,7 @@
     <p><b>Cover:</b></p>
     <img src="{{ asset('cover/'.$book->cover) }}" width="150"><br>
 @endif
-<p><b>Status:</b> {{ $book->status }}</p>
+<p><b>Status:</b> {{ $book->status_label }}</p>
 <p><b>Tanggal Mulai:</b> {{ $book->started_at ?? '-' }}</p>
 <p><b>Tanggal Selesai:</b> {{ $book->finished_at ?? '-' }}</p>
 <p><b>Rating:</b> {{ $book->rating ?? '-' }}</p>
